@@ -26,7 +26,10 @@ const styles = StyleSheet.create({
       fontSize:20,
       fontWeight:"bold",
       color:"cornflowerblue",
-    }
+    },
+    buttonImage: {
+        marginTop:20,
+    },
   });
 
 export{styles};
