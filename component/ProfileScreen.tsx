@@ -6,11 +6,11 @@ const ProfileScreen = (): React.JSX.Element => {
   const [profileImage, setImage] = useState(require("../assets/me.jpg"));
   const [name, setName] = useState("Sarawut Siriyotha");
   const handleChangeName = () => {
-    setName("BOBO");
+    setName(name == "Sarawut Siriyotha" ? "BOBO" : "Sarawut Siriyotha");
   };
   const handleChangeImage = () =>{
-    setImage(require("../assets/shiba.jpg"))
-  }
+    setImage(profileImage == require("../assets/me.jpg") ? require("../assets/shiba.jpg") : require("../assets/me.jpg"))
+  };
 
   return (
     <View style={styles.container}>
