@@ -1,51 +1,20 @@
-import { StatusBar } from "expo-status-bar";
-import React, { useState, useEffect } from "react";
-import { StyleSheet, Text, View, Button, Alert, TextInput } from "react-native";
-import AppFooter from "./component/AppFooter";
-import AppHeader from "./component/AppHeader";
-import Content from "./component/Content";
-import { stylesPractice } from "./style/styles";
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import ProfileScreen from "./component/ProfileScreen";
+import UseEffectExample from "./component/UseEffectExample";
+import Login from "./component/Login";
+import { stylesLogin } from "./style/styles";
 
-export default function App(): React.JSX.Element {
-  const [fullname, setFullname] = useState("");
-  const [message, setMessage] = useState("Message from App.tsx");
-  const [footerMessage, setFooterMessage] = useState(
-    "Thai-Nichi Institue of Tecnology"
-  );
-
-  useEffect(() => {
-    console.log("Component has mounted");
-  }, []);
-
-  useEffect(() => {
-    console.log(`Fullname has changed to : ${fullname}`);
-  }, [fullname]);
-
-  const handleButtonClick = () => {
-    Alert.alert("Hello", `Input your fullname : ${fullname}`);
-  };
-
+const App = (): React.JSX.Element => {
   return (
-    <View style={styles.container}>
-      <AppHeader fullname={fullname} message={message} />
-      {/* <Content message={message} fullname={fullname} /> */}
-      <Content message={message} onButtonClick ={handleButtonClick} />
-      <AppFooter footerMessage={footerMessage} />
-      <TextInput
-        style={stylesPractice.input}
-        placeholder="Enter your fullname"
-        value={fullname}
-        onChangeText={setFullname}
-      />
+    <View>
+      {/* <UseEffectExample/> */}
+      <ProfileScreen /> 
+      <Login />
     </View>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+export default App;
+
+
