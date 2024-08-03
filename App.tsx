@@ -10,7 +10,6 @@ const App = (): React.JSX.Element => {
     <View>
       {/* <UseEffectExample/> */}
       <ProfileScreen /> 
-      <Login />
     </View>
   );
 };
