@@ -1,15 +1,19 @@
-import { StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import ProfileScreen from "./component/ProfileScreen";
 import UseEffectExample from "./component/UseEffectExample";
 import Login from "./component/Login";
 import { stylesLogin } from "./style/styles";
+import FlastListExample from "./component/FlastListExample";
+import FlatListcallBackend from "./component/FlatListcallBackend";
 
 const App = (): React.JSX.Element => {
   return (
     <View>
       {/* <UseEffectExample/> */}
-      <ProfileScreen /> 
+      {/* <ProfileScreen />  */}
+      {/* <FlastListExample /> */}
+      <FlatListcallBackend/>
     </View>
   );
 };
