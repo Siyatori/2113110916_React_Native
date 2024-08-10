@@ -6,6 +6,7 @@ import Login from "./component/Login";
 import { stylesLogin } from "./style/styles";
 import FlastListExample from "./component/FlastListExample";
 import FlatListcallBackend from "./component/FlatListcallBackend";
+import NewApp from "./component/NewApp";
 
 const App = (): React.JSX.Element => {
   return (
@@ -13,7 +14,8 @@ const App = (): React.JSX.Element => {
       {/* <UseEffectExample/> */}
       {/* <ProfileScreen />  */}
       {/* <FlastListExample /> */}
-      <FlatListcallBackend/>
+      {/* <FlatListcallBackend/> */}
+      <NewApp />
     </View>
   );
 };
