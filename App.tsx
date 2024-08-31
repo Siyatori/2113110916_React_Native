@@ -1,20 +1,24 @@
 import { FlatList, StyleSheet, Text, View, Button } from "react-native";
 import React from "react";
-import AxiospostData from "./component/AxiospostData";
-import WeatherLondon from "./component/WeatherLondon";
-import WeatherBangkok from "./component/WeatherBangkok";
-import ModelExample from "./component/ModelExample";
-import WeatherApp from "./component/WeatherApp";
+import HomeScreen from "./screen/HomeScreen";
+import AboutScreen from "./screen/AboutScreen";
+import {NavigationContainer} from '@react-navigation/native'
+import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import CreatePostScreen from "./screen/CreatePostScreen";
+
 
 const App = (): React.JSX.Element => {
+
+  const HomeStack = createNativeStackNavigator();
+
   return (
-    <View>
-      {/* <AxiospostData /> */}
-      {/* <WeatherLondon /> */}
-      {/* <WeatherBangkok/> */}
-      {/* <ModelExample /> */}
-      <WeatherApp />
-    </View>
+    <NavigationContainer>
+      <HomeStack.Navigator>
+        <HomeStack.Screen name="Home" component={HomeScreen} />
+        <HomeStack.Screen name="About" component={AboutScreen} />
+        <HomeStack.Screen name="CreatePost" component={CreatePostScreen} />
+      </HomeStack.Navigator>
+    </NavigationContainer>
   );
 };
 
