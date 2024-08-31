@@ -32,6 +32,24 @@ const WeatherApp = (): React.JSX.Element => {
           </Pressable>
         </View>
       </Modal>
+
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => setModalVisible(!modalVisible)}
+      >
+        <View style={styles.modalContainer}>
+          {/* <Text style={styles.title}>Hello React Native</Text> */}
+          <WeatherBangkok />
+          <Pressable
+            style={[styles.button]}
+            onPress={() => setModalVisible(!modalVisible)}
+          >
+            <Text style={styles.closeButtonText}>Close</Text>
+          </Pressable>
+        </View>
+      </Modal>
     </View>
   );
 };
@@ -79,6 +97,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.8,
     shadowRadius: 10,
     elevation: 5,
+    marginHorizontal: "auto",
   },
   closeButton: {
     backgroundColor: "#FF3B30",
