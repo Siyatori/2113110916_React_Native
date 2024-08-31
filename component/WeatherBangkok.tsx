@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
       padding: 16,
       paddingTop: 200,
       backgroundColor: "#f5f5f5",
-      height: "100%",
+      height: "90%",
     },
     centeredContainer: {
       justifyContent: "center",
