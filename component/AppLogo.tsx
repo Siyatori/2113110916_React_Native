@@ -5,7 +5,7 @@ const AppLogo = ():React.JSX.Element => {
   return (
     <View>
       <Image
-        source={require('../assets/tni_logo.png')}
+        source={require('../assets/Images/tni_logo.png')}
         resizeMode='cover'
         style={styles.logo}
       />

@@ -115,4 +115,34 @@ const stylesLogin = StyleSheet.create({
   }, 
   });
 
-export { styles, stylesPractice, stylesLogin };
+  const stylesCreatePost = StyleSheet.create({
+    container: {
+      padding: 20,
+    },
+    header: {
+      fontSize: 24,
+      fontWeight: "bold",
+    },
+    postContainer: {
+      alignItems: "center",
+      justifyContent: "center",
+      marginTop: 50,
+    },
+    postText: {
+      margin: 10,
+      fontSize: 16,
+    },
+    postContent: {
+      color: "blue", // เปลี่ยนสีข้อความที่ถูกส่งกลับมา
+      fontWeight: "bold",
+    },
+  });
+  
+  const logoStyle = StyleSheet.create ({
+    logo: {
+      width: 70,
+      height: 50
+    }
+  });
+
+export { styles, stylesPractice, stylesLogin,stylesCreatePost };

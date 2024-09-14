@@ -1,10 +1,10 @@
 import { View, Text, Button, Alert } from "react-native";
 import React, { useLayoutEffect } from "react";
-import { stylesCreatePost } from "../styles/styles";
+import { stylesCreatePost } from "../style/styles";
 import MaterialIcon from "react-native-vector-icons/MaterialCommunityIcons";
 import { useNavigation } from "@react-navigation/native";
 ("@react-navigation/native");
-import AppLogo from "../components/AppLogo";
+import AppLogo from "../component/AppLogo";
 import {
   HeaderButton,
   HeaderButtons,

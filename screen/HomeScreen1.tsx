@@ -1,6 +1,6 @@
 import { View, Text, Button } from 'react-native'
 import React from 'react'
-import { stylesCreatePost } from '../styles/styles';
+import { stylesCreatePost } from '../style/styles';
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
